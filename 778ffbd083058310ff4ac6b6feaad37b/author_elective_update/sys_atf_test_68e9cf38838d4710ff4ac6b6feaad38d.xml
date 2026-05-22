@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_test">
+    <sys_atf_test action="DELETE">
+        <active>true</active>
+        <copied_from display_value="My First Loaner Requestr ATF Test">f9188738838d4710ff4ac6b6feaad375</copied_from>
+        <description/>
+        <enable_parameterized_testing>false</enable_parameterized_testing>
+        <fail_on_server_error>true</fail_on_server_error>
+        <name>My First Loaner Requestr ATF Test copy</name>
+        <parameters/>
+        <remember/>
+        <sn_atf_tg_generated>false</sn_atf_tg_generated>
+        <sys_class_name>sys_atf_test</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-22 04:52:34</sys_created_on>
+        <sys_id>68e9cf38838d4710ff4ac6b6feaad38d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My First Loaner Requestr ATF Test copy</sys_name>
+        <sys_package display_value="Loaner Request" source="x_1919948_loaner_0">778ffbd083058310ff4ac6b6feaad37b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">778ffbd083058310ff4ac6b6feaad37b</sys_scope>
+        <sys_update_name>sys_atf_test_68e9cf38838d4710ff4ac6b6feaad38d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-22 04:52:34</sys_updated_on>
+        <test_origin>manual</test_origin>
+    </sys_atf_test>
+    <sys_variable_value action="DELETE" query="document_key=68e9cf38838d4710ff4ac6b6feaad38d"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Loaner Request">778ffbd083058310ff4ac6b6feaad37b</application>
+        <file_path/>
+        <instance_id>9d9dadc11bd2315c19254089bd4bcbf3</instance_id>
+        <instance_name>dev201361</instance_name>
+        <name>sys_atf_test_68e9cf38838d4710ff4ac6b6feaad38d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_test"><sys_atf_test action="INSERT_OR_UPDATE"><active>true</active><copied_from display_value="My First Loaner Requestr ATF Test">f9188738838d4710ff4ac6b6feaad375</copied_from><description/><enable_parameterized_testing>false</enable_parameterized_testing><fail_on_server_error>true</fail_on_server_error><name>My First Loaner Requestr ATF Test copy</name><parameters/><remember/><sn_atf_tg_generated>false</sn_atf_tg_generated><sys_class_name>sys_atf_test</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-22 04:52:34</sys_created_on><sys_id>68e9cf38838d4710ff4ac6b6feaad38d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>My First Loaner Requestr ATF Test copy</sys_name><sys_package display_value="Loaner Request" source="x_1919948_loaner_0">778ffbd083058310ff4ac6b6feaad37b</sys_package><sys_policy/><sys_scope display_value="Loaner Request">778ffbd083058310ff4ac6b6feaad37b</sys_scope><sys_update_name>sys_atf_test_68e9cf38838d4710ff4ac6b6feaad38d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-22 04:52:34</sys_updated_on><test_origin>manual</test_origin></sys_atf_test><sys_variable_value action="delete_multiple" query="document_key=68e9cf38838d4710ff4ac6b6feaad38d"/></record_update>]]></payload>
+        <payload_hash>825366378</payload_hash>
+        <record_name>My First Loaner Requestr ATF Test copy</record_name>
+        <reverted_from/>
+        <source>01548f7c834d4710ff4ac6b6feaad330</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-22 04:52:34</sys_created_on>
+        <sys_id>a0e9433c838d4710ff4ac6b6feaad39d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e4e0732220000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-22 04:52:34</sys_updated_on>
+        <type>Test</type>
+        <update_guid>60e9433cc68d471019bd26881ef1079c</update_guid>
+        <update_guid_history>60e9433cc68d471019bd26881ef1079c:825366378</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-22 04:53:42</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_test">sys_atf_test</sys_db_object>
+        <sys_id>021d9ef8449b454483774f4eb5272690</sys_id>
+        <sys_metadata>68e9cf38838d4710ff4ac6b6feaad38d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My First Loaner Requestr ATF Test copy</sys_name>
+        <sys_package display_value="Loaner Request" source="x_1919948_loaner_0">778ffbd083058310ff4ac6b6feaad37b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">778ffbd083058310ff4ac6b6feaad37b</sys_scope>
+        <sys_scope_delete display_value="">b432e2328af54af79a4999eaae4f8261</sys_scope_delete>
+        <sys_update_name>sys_atf_test_68e9cf38838d4710ff4ac6b6feaad38d</sys_update_name>
+        <sys_update_version display_value="sys_atf_test_68e9cf38838d4710ff4ac6b6feaad38d">a0e9433c838d4710ff4ac6b6feaad39d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-22 04:53:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
