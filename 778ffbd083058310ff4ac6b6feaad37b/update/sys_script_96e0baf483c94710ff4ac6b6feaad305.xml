@@ -27,43 +27,26 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+        <script><![CDATA[var request = new sn_ws.RESTMessageV2();
+request.setEndpoint('https://dev201361.service-now.com/api/now/table/u_password_vault?sysparm_query=u_asset%3DP1000503&sysparm_fields=u_password&sysparm_limit=1');
+request.setHttpMethod('GET');
 
-    if (current.item_type == "cmdb_ci_computer") {
-        
-        var request = new sn_ws.RESTMessageV2();
-        request.setEndpoint('https://dev201361.service-now.com/api/now/table/u_password_vault?sysparm_query=u_asset%3D' + current.cmdb_ci.asset_tag + '&sysparm_fields=u_password&sysparm_limit=1');
-        request.setHttpMethod('GET');
+//Eg. UserName="admin", Password="admin" for this code sample.
+var user = 'admin';
+var password = 'admin';
 
-        var user = 'admin';
-        var password = 'dev201361'; // Ensure this matches your instance login password
+request.setBasicAuth(user,password);
+request.setRequestHeader("Accept","application/json");
 
-        request.setBasicAuth(user, password);
-        request.setRequestHeader("Accept", "application/json");
-
-        var response = request.execute();
-        
-        // Parse the response to extract the password string
-        var obj = JSON.parse(response.getBody());
-        
-        // Guard check to make sure a matching record was found in your vault
-        if (obj.result && obj.result.length > 0) {
-            var myPass = obj.result[0].u_password;
-            // Log the final password string to the application logs
-            gs.info('u_password: ' + myPass);
-        } else {
-            gs.info('u_password: No password found for asset ' + current.cmdb_ci.asset_tag);
-        }
-    }
-
-})(current, previous);]]></script>
+var response = request.execute();
+gs.log(response.getBody());]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-22 03:12:54</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>96e0baf483c94710ff4ac6b6feaad305</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Retrieved Credentials</sys_name>
         <sys_overrides/>
         <sys_package display_value="Loaner Request" source="x_1919948_loaner_0">778ffbd083058310ff4ac6b6feaad37b</sys_package>
@@ -71,7 +54,7 @@
         <sys_scope display_value="Loaner Request">778ffbd083058310ff4ac6b6feaad37b</sys_scope>
         <sys_update_name>sys_script_96e0baf483c94710ff4ac6b6feaad305</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-22 03:53:01</sys_updated_on>
+        <sys_updated_on>2026-05-22 05:54:29</sys_updated_on>
         <template/>
         <when>async_always</when>
     </sys_script>
